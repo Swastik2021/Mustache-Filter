@@ -1,0 +1,30 @@
+/* if we hover mouse in the button it will change to red color*/
+.btn-success:hover{
+    background-color: red;
+}
+h3{
+    font-size: 25px !important;
+}
+ canvas{
+     animation-name: border;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+ }
+/*When you specify CSS styles inside the @keyframes rule, 
+the animation will gradually change from the current style to the new style at certain times.*/
+
+/*The animation-duration property defines how long an animation should take to complete. 
+If the animation-duration property is not specified, no animation will occur,
+because the default value is 0s (0 seconds). */
+
+/* animation iteration count is how many times you want the animation to repeat*/
+/* from is from beginning of animation and to is end of animation */
+/* from can be 0% and to can be 100%*/
+ @keyframes border{
+    from{box-shadow:1px 1px 38px red;}
+    16.67%{box-shadow:1px 1px 38px orange;}
+    33.34%{box-shadow:1px 1px 38px yellow;}
+     50%{box-shadow:1px 1px 38px rgb(6, 250, 38);}
+     66.68%{box-shadow:1px 1px 38px rgb(0, 255, 255)}
+     100%{box-shadow:1px 1px 38px magenta}
+ }
